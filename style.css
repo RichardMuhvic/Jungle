@@ -1,53 +1,54 @@
-body{
+* {
     margin: 0;
-    background-color: #151225;
+    padding: 0;
 }
 
-#scene {
+body {
+    background-color: #151225;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
     position: relative;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
 }
 
-.plan-1, .plan-2, .plan-3, .plan-4, .plan-5, .plan-5, .plan-6 {
-    width: 100%;
-
-}
-
-.image_down{
-
-}
-.image_up{
-
-}
-.image_left{
-
-}
-.image_right{
-
-}
-
-.plan-1{
+.container img {
     position: absolute;
-    z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /*object-fit: contain;*/
 }
-.plan-2{
-    position: absolute;
-    z-index: 90;
-}
-.plan-3{
-    position: absolute;
-    z-index: 80;
-}
-.plan-4{
-    position: absolute;
-    z-index: 70;
-}
-.plan-5{
-    position: absolute;
+
+.container img:nth-child(1) {
     z-index: 60;
 }
-.plan-6{
-    position: absolute;
+.container img:nth-child(2) {
     z-index: 50;
+}
+.container img:nth-child(3) {
+    z-index: 40;
+}
+.container img:nth-child(4) {
+    z-index: 30;
+}
+.container img:nth-child(5) {
+    z-index: 20;
+}
+.container img:nth-child(6) {
+    z-index: 10;
 }
